@@ -29,6 +29,18 @@
 }
 
 
+.fixed{
+
+	position:fixed;
+	width: 100%;
+	top:0;
+	opacity: 0.9;
+	z-index: 2
+
+}
+
+
+
 
 
 
@@ -49,7 +61,7 @@
 }
 
 .menu ul{
-
+	
 	text-align: center;
 	margin:auto;
 	width: 1000px;
@@ -65,13 +77,15 @@ display: inline-block;
 
 
 
+
+
 .menu li a{
 		display:block;
 		text-decoration:none;
-		color:#ffffff;
-		font-size: 20px;
-		padding:20px;
-		
+		color:#e6e6e6;
+		font-size: 16px;
+		padding:23px;
+		transition: 0.2s ease;
 }
 
 
@@ -79,8 +93,17 @@ display: inline-block;
 .menu ul  a:hover{
 
 	background-color:#f48c15;
-	color:#ffc27d;
-	
+	color:white;
+	transition: 0.2s ease;
+}
+
+
+#backtomenu{
+	bottom: 10px;
+	position: fixed;
+	right:10px;
+	z-index: 2;
+
 }
 
 
@@ -94,9 +117,12 @@ clear:both;
 }
 
 
+
+
+
 .home{
 
-	background-color: #12619c;
+	background-color: #1064c3;
 	padding-top:70px;
 	padding-bottom: 80px;
 	
@@ -117,7 +143,7 @@ font-family:Microsoft JhengHei;
 text-align: center;
 color:white;
 margin-top:50px;
-font-size:36px;
+font-size:34px;
 
 }
 
@@ -161,9 +187,9 @@ border: 3px solid white;
 .skills{
 
 
-		background-color:#d8d8d8;
+		background-color:#f3f3f3;
 		padding-top:20px;
-		padding-bottom: 600px;
+		padding-bottom: 650px;
 
 }
 
@@ -172,7 +198,7 @@ border: 3px solid white;
 text-align: center;
 color:#0d4b73;
 margin-top:60px;
-font-size:30px;
+font-size:34px;
 
 }
 
@@ -209,16 +235,16 @@ margin-bottom:60px;
 .work{
 
 	background: #ededed;
-	
+	position: relative;
 	padding-top:100px;
-	
+	padding-bottom: 50px;
 }
 
 .work h1{
 
 	text-align:center;
 	color:#0d4b73;
-	font-size:30px;
+	font-size:34px;
 
 
 }
@@ -228,7 +254,7 @@ margin-bottom:60px;
 	margin-top:5px; 
 	text-align: center;
 	color:#0d4b73;
-	margin-bottom: 60px;
+	margin-bottom: 80px;
 }
 
 
@@ -239,7 +265,7 @@ width: 20px;
 height: 20px;
 background-color:#0068b7;
 margin: auto;
-bottom: 230px;
+bottom: 250px;
 }
 
 .box2{
@@ -249,7 +275,7 @@ width: 20px;
 height: 20px;
 bottom: 200px;
 margin:auto;
-bottom: 550px;
+bottom: 520px;
 
 background-color:#0068b7;
 
@@ -263,23 +289,21 @@ background-color:#0068b7;
 	margin:auto;
 	width: 6px;
 	border-radius:50px;
-	height: 700px;
+	height: 630px;
 	background-color:#1d97c8;
 
 
 }
 
 .dialog{
+	background-color: #0068b7;
+	position: absolute;
+	left:22%;
+	width: 23%;
+	bottom:430px;
+	border-radius:5px;
+	padding: 14px;
 
-width:  15%;
-
-background-color: #0068b7;
-position:relative;
-left:30%;
-
-bottom:570px;
-border-radius:5px;
-padding: 14px;
 }
 
 .dialog h4{
@@ -291,26 +315,22 @@ font-size:18px;
 .dialog p{
 margin-top:45px;
 color:white;
-font-size:16px;
+font-size:17px;
 font-family:Microsoft JhengHei;
-line-height: 1.4;
+line-height: 1.7;
 }
-
 
 
 .dialog1{
-
-width:  15%;
-
-background-color: #0068b7;
-position:relative;
-left:53%;
-
-bottom:400px;
+	background-color: #0068b7;
+	position: absolute;
+	right:22%;
+width: 23%;
+bottom:180px;
 border-radius:5px;
 padding: 14px;
-}
 
+}
 
 .dialog1 h4{
 margin-top:10px;
@@ -321,19 +341,10 @@ font-size:18px;
 .dialog1 p{
 margin-top:45px;
 color:white;
-font-size:16px;
+font-size:17px;
 font-family:Microsoft JhengHei;
-line-height: 1.4;
+line-height: 1.7;
 }
-
-
-
-
-
-
-
-
-
 
 
 .portfolio{
@@ -344,35 +355,230 @@ padding-top: 50px;
 
 
 }
+.batman-icon{
+	width:224px;
+	height: 224px;
+	background: url(../img/portfolio/armorbatman-icon-click.png)
+
+
+}
+
+.batman-icon:hover{
+
+transition: 0.1s ease;
+background: url(../img/portfolio/armorbatman-icon.png)
+
+}
+
+.kyloren-icon{
+	width:224px;
+	height: 224px;
+	background: url(../img/portfolio/kyloren-icon-click.png)
+
+
+}
+
+.kyloren-icon:hover{
+
+transition: 0.1s ease;
+background: url(../img/portfolio/kyloren-icon.png)
+
+}
+
+
+.gasta-icon{
+	width:224px;
+	height: 224px;
+	background: url(../img/portfolio/gasta-icon-click.png)
+
+
+}
+
+.gasta-icon:hover{
+
+transition: 0.1s ease;
+background: url(../img/portfolio/gasta-icon.png)
+
+}
+
+
+.lightsaber-icon{
+	width:224px;
+	height: 224px;
+	background: url(../img/portfolio/lightsaber-icon-click.png)
+
+
+}
+
+.lightsaber-icon:hover{
+
+transition: 0.1s ease;
+background: url(../img/portfolio/lightsaber-icon.png)
+
+}
+
+
+
+
+.t-rex-icon:hover{
+
+transition: 0.1s ease;
+background: url(../img/portfolio/t-rex-icon.png)
+
+}
+
+
+.t-rex-icon{
+	width:224px;
+	height: 224px;
+	background: url(../img/portfolio/t-rex-icon-click.png)
+
+
+}
+
+.chineseknight-icon:hover{
+
+transition: 0.1s ease;
+background: url(../img/portfolio/chineseknight-icon.png)
+
+}
+
+
+.chineseknight-icon{
+	width:224px;
+	height: 224px;
+	background: url(../img/portfolio/chineseknight-icon-click.png)
+
+
+}
+
+
+.painting-icon:hover{
+
+transition: 0.1s ease;
+background: url(../img/portfolio/painting-icon.png)
+
+}
+
+
+.painting-icon{
+	width:224px;
+	height: 224px;
+	background: url(../img/portfolio/painting-icon-click.png)
+
+
+}
+
+
+
+
+.painting_2-icon:hover{
+
+transition: 0.1s ease;
+background: url(../img/portfolio/painting_2-icon.png)
+
+}
+
+
+.painting_2-icon{
+	width:224px;
+	height: 224px;
+	background: url(../img/portfolio/painting_2-icon-click.png)
+
+
+}
+
+
+
+
+.t-rex-icon:hover{
+
+transition: 0.1s ease;
+background: url(../img/portfolio/t-rex-icon.png)
+
+}
+
+
+.t-rex-icon{
+	width:224px;
+	height: 224px;
+	background: url(../img/portfolio/t-rex-icon-click.png)
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .buttom {
 	width: 1000px;
 	text-align: center;
 	margin: auto;
-	margin-top:100px;
-	margin-bottom:80px;
+	margin-top:70px;
+	
 }
 
 .artworks{
 
-font-size: 18px;
+font-size: 16px;
 color:white;
 border: 3px solid white;
 display: inline;
-padding: 20px;
+padding: 15px;
 margin-right:3%;
+background: #1d97c8;
+}
+.artworks:hover{
+
+background-color: #0168b7;
+border: 3px solid #0168b7;
+}
+
+.website:hover{
+
+background-color: #0168b7;
+border: 3px solid #0168b7;
 }
 
 .website{
-font-size: 18px;
+font-size: 16px;
 color:white;
 border: 3px solid white;
-padding: 20px;
+padding: 15px;
 display: inline;
 padding-right:26px;
 padding-left:26px;
+background: #1d97c8;
 }
+
+ul{
+		position: relative;
+}
+
+.batman a{
+
+	
+}
+.batman2{
+
+
+background-image:url(../img/portfolio/armorbatman-icon-click.png)
+
+}
+
+
 
 
 
@@ -383,7 +589,7 @@ padding-left:26px;
 margin-top: 25px;
 text-align: center;
 	color:#ffffff;
-	font-size:36px;
+	font-size:34px;
 	
 }
 
@@ -404,14 +610,14 @@ color:#ffffff;
 	width:20%;
 	float:left;
 	text-align: center;
-	margin:22px;
-	padding-bottom:10px; 
+	margin:20px;
+	
 
 }
 .portfolio ul{
 
 margin: auto;
-	width: 1000px;
+	width: 1100px;
 	margin-top: 60px
 }
 
