@@ -57,7 +57,7 @@
 
 .menu{
 	background-color:#282a39;
-	
+	width: 100%;
 }
 
 .menu ul{
@@ -125,7 +125,7 @@ clear:both;
 	background-color: #0c619d;
 	padding-top:70px;
 	padding-bottom: 80px;
-	
+	width: 100%;
 
 }
 
@@ -186,7 +186,7 @@ border: 3px solid white;
 
 .skills{
 
-
+width: 100%;
 		background-color:#d8d8d8;
 		padding-top:20px;
 		padding-bottom: 650px;
@@ -233,7 +233,7 @@ margin-bottom:60px;
 
 
 .work{
-
+	width: 100%;
 	background: #ededed;
 	position: relative;
 	padding-top:100px;
@@ -352,7 +352,7 @@ line-height: 1.7;
 background-color:#1d97c8;
 padding-bottom: 650px;
 padding-top: 50px;
-
+width: 100%;
 
 }
 .batman-icon{
@@ -624,7 +624,7 @@ margin: auto;
 
 
 .footer{
-
+width: 100%;
 	padding-top:90px; 
 	padding-bottom:70px; 
 }
@@ -695,6 +695,7 @@ display:inline;
 
 
 .footercolor{
+	width: 100%;
 	padding-top: 20px;
 	padding-bottom: 30px;
 	background-color:#137da7;
